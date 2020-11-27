@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88BC13014A8BE29173A60DB3 /* Pods_abi_beer_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7317DE67A2478692631E7E52 /* Pods_abi_beer_app.framework */; };
+		F91E2070256F617C00EC61E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F91E206F256F617C00EC61E7 /* Podfile */; };
+		F9B839E5257073EC007E8342 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839E4257073EC007E8342 /* Beer.swift */; };
+		F9B839E825707449007E8342 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839E725707449007E8342 /* BeerTableViewCell.swift */; };
+		F9B839F125707AA6007E8342 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839F025707AA6007E8342 /* NetworkService.swift */; };
+		F9B839F425707ABF007E8342 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839F325707ABF007E8342 /* Environment.swift */; };
+		F9B839F725707C19007E8342 /* BeerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839F625707C19007E8342 /* BeerListInteractor.swift */; };
+		F9B839FA25707C75007E8342 /* BeerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B839F925707C75007E8342 /* BeerListPresenter.swift */; };
+		F9DC6EF32570882C0028383C /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6EF22570882C0028383C /* BeerDetailViewController.swift */; };
+		F9DC6EF8257089CA0028383C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6EF7257089CA0028383C /* LoadingView.swift */; };
 		F9E885A5256F2B3A00F2DC99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E885A4256F2B3A00F2DC99 /* AppDelegate.swift */; };
-		F9E885A7256F2B3A00F2DC99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E885A6256F2B3A00F2DC99 /* SceneDelegate.swift */; };
-		F9E885A9256F2B3A00F2DC99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E885A8256F2B3A00F2DC99 /* ViewController.swift */; };
-		F9E885AC256F2B3A00F2DC99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E885AA256F2B3A00F2DC99 /* Main.storyboard */; };
 		F9E885AE256F2B3F00F2DC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E885AD256F2B3F00F2DC99 /* Assets.xcassets */; };
 		F9E885B1256F2B3F00F2DC99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E885AF256F2B3F00F2DC99 /* LaunchScreen.storyboard */; };
+		F9E885C0256F2CA800F2DC99 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E885BF256F2CA800F2DC99 /* BeerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7317DE67A2478692631E7E52 /* Pods_abi_beer_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_abi_beer_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4EC776FAE5F9AAE2B5BD9A /* Pods-abi-beer-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abi-beer-app.release.xcconfig"; path = "Target Support Files/Pods-abi-beer-app/Pods-abi-beer-app.release.xcconfig"; sourceTree = "<group>"; };
+		E66B9D0F7CD94B172A4708F2 /* Pods-abi-beer-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abi-beer-app.debug.xcconfig"; path = "Target Support Files/Pods-abi-beer-app/Pods-abi-beer-app.debug.xcconfig"; sourceTree = "<group>"; };
+		F91E206F256F617C00EC61E7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F9B839E4257073EC007E8342 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		F9B839E725707449007E8342 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		F9B839F025707AA6007E8342 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F9B839F325707ABF007E8342 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F9B839F625707C19007E8342 /* BeerListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListInteractor.swift; sourceTree = "<group>"; };
+		F9B839F925707C75007E8342 /* BeerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListPresenter.swift; sourceTree = "<group>"; };
+		F9DC6EF22570882C0028383C /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		F9DC6EF7257089CA0028383C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F9E885A1256F2B3A00F2DC99 /* abi-beer-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "abi-beer-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E885A4256F2B3A00F2DC99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9E885A6256F2B3A00F2DC99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9E885A8256F2B3A00F2DC99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9E885AB256F2B3A00F2DC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9E885AD256F2B3F00F2DC99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E885B0256F2B3F00F2DC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9E885B2256F2B3F00F2DC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E885BF256F2CA800F2DC99 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BC13014A8BE29173A60DB3 /* Pods_abi_beer_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4A2226A015C36882D54549 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E66B9D0F7CD94B172A4708F2 /* Pods-abi-beer-app.debug.xcconfig */,
+				CD4EC776FAE5F9AAE2B5BD9A /* Pods-abi-beer-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A23B985EE38A8091A618003D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7317DE67A2478692631E7E52 /* Pods_abi_beer_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9B839E025706D58007E8342 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9B839E4257073EC007E8342 /* Beer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9B839E125706D5F007E8342 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9B839F025707AA6007E8342 /* NetworkService.swift */,
+				F9B839F325707ABF007E8342 /* Environment.swift */,
+				F9DC6EF7257089CA0028383C /* LoadingView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F9B839EE25707A60007E8342 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC6EF12570880F0028383C /* BeerDetail */,
+				F9E885BE256F2C9500F2DC99 /* BeerList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F9DC6EF12570880F0028383C /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC6EF22570882C0028383C /* BeerDetailViewController.swift */,
+			);
+			path = BeerDetail;
+			sourceTree = "<group>";
+		};
 		F9E88598256F2B3A00F2DC99 = {
 			isa = PBXGroup;
 			children = (
+				F91E206F256F617C00EC61E7 /* Podfile */,
 				F9E885A3256F2B3A00F2DC99 /* abi-beer-app */,
 				F9E885A2256F2B3A00F2DC99 /* Products */,
+				1B4A2226A015C36882D54549 /* Pods */,
+				A23B985EE38A8091A618003D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +130,26 @@
 		F9E885A3256F2B3A00F2DC99 /* abi-beer-app */ = {
 			isa = PBXGroup;
 			children = (
+				F9B839E025706D58007E8342 /* Models */,
+				F9B839E125706D5F007E8342 /* Utils */,
+				F9B839EE25707A60007E8342 /* Scenes */,
 				F9E885A4256F2B3A00F2DC99 /* AppDelegate.swift */,
-				F9E885A6256F2B3A00F2DC99 /* SceneDelegate.swift */,
-				F9E885A8256F2B3A00F2DC99 /* ViewController.swift */,
-				F9E885AA256F2B3A00F2DC99 /* Main.storyboard */,
 				F9E885AD256F2B3F00F2DC99 /* Assets.xcassets */,
 				F9E885AF256F2B3F00F2DC99 /* LaunchScreen.storyboard */,
 				F9E885B2256F2B3F00F2DC99 /* Info.plist */,
 			);
 			path = "abi-beer-app";
+			sourceTree = "<group>";
+		};
+		F9E885BE256F2C9500F2DC99 /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				F9E885BF256F2CA800F2DC99 /* BeerListViewController.swift */,
+				F9B839E725707449007E8342 /* BeerTableViewCell.swift */,
+				F9B839F625707C19007E8342 /* BeerListInteractor.swift */,
+				F9B839F925707C75007E8342 /* BeerListPresenter.swift */,
+			);
+			path = BeerList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9E885B5256F2B3F00F2DC99 /* Build configuration list for PBXNativeTarget "abi-beer-app" */;
 			buildPhases = (
+				97CCF2572851FCA2E758A838 /* [CP] Check Pods Manifest.lock */,
 				F9E8859D256F2B3A00F2DC99 /* Sources */,
 				F9E8859E256F2B3A00F2DC99 /* Frameworks */,
 				F9E8859F256F2B3A00F2DC99 /* Resources */,
+				69E2E170121AC70AB62BDA62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +211,77 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91E2070256F617C00EC61E7 /* Podfile in Resources */,
 				F9E885B1256F2B3F00F2DC99 /* LaunchScreen.storyboard in Resources */,
 				F9E885AE256F2B3F00F2DC99 /* Assets.xcassets in Resources */,
-				F9E885AC256F2B3A00F2DC99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69E2E170121AC70AB62BDA62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abi-beer-app/Pods-abi-beer-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abi-beer-app/Pods-abi-beer-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abi-beer-app/Pods-abi-beer-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CCF2572851FCA2E758A838 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-abi-beer-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9E8859D256F2B3A00F2DC99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E885A9256F2B3A00F2DC99 /* ViewController.swift in Sources */,
+				F9B839F725707C19007E8342 /* BeerListInteractor.swift in Sources */,
+				F9B839F125707AA6007E8342 /* NetworkService.swift in Sources */,
+				F9B839F425707ABF007E8342 /* Environment.swift in Sources */,
+				F9DC6EF8257089CA0028383C /* LoadingView.swift in Sources */,
+				F9E885C0256F2CA800F2DC99 /* BeerListViewController.swift in Sources */,
+				F9B839FA25707C75007E8342 /* BeerListPresenter.swift in Sources */,
+				F9B839E5257073EC007E8342 /* Beer.swift in Sources */,
 				F9E885A5256F2B3A00F2DC99 /* AppDelegate.swift in Sources */,
-				F9E885A7256F2B3A00F2DC99 /* SceneDelegate.swift in Sources */,
+				F9DC6EF32570882C0028383C /* BeerDetailViewController.swift in Sources */,
+				F9B839E825707449007E8342 /* BeerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F9E885AA256F2B3A00F2DC99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9E885AB256F2B3A00F2DC99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F9E885AF256F2B3F00F2DC99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,11 +411,13 @@
 		};
 		F9E885B6256F2B3F00F2DC99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66B9D0F7CD94B172A4708F2 /* Pods-abi-beer-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "abi-beer-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +431,13 @@
 		};
 		F9E885B7256F2B3F00F2DC99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4EC776FAE5F9AAE2B5BD9A /* Pods-abi-beer-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "abi-beer-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
