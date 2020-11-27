@@ -30,7 +30,7 @@ class BeerListPresenter: BeerListPresenterProtocol {
     
     func presentDetail(beer: Beer) {
         guard let url = URL(string: beer.imageURLString)  else { return }
-        let detailViewController = BeerDetailViewController(imageURL: url, productName: beer.product)
+        let detailViewController = BeerDetailViewController(imageURL: url, productName: beer.product, productDetail: beer.description)
         viewController?.showDetail(viewController: detailViewController)
     }
 }

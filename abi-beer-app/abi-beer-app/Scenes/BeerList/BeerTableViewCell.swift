@@ -23,7 +23,7 @@ class BeerTableViewCell: UITableViewCell {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
-        stackView.spacing = 8
+        stackView.spacing = 4
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         return stackView
@@ -32,7 +32,7 @@ class BeerTableViewCell: UITableViewCell {
     lazy var beerNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Beer Name"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -40,7 +40,8 @@ class BeerTableViewCell: UITableViewCell {
     lazy var beerDetailLabel: UILabel = {
         let label = UILabel()
         label.text = "Beer Detail"
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -48,7 +49,7 @@ class BeerTableViewCell: UITableViewCell {
     lazy var beerPriceLabel: UILabel = {
         let label = UILabel()
         label.text = "Beer Price"
-        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -76,13 +77,12 @@ class BeerTableViewCell: UITableViewCell {
             beerImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             stackView.centerYAnchor.constraint(equalTo: beerImageView.centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: beerImageView.trailingAnchor, constant: 10),
-            beerPriceLabel.heightAnchor.constraint(equalToConstant: 70),
+            beerPriceLabel.heightAnchor.constraint(equalToConstant: 40),
             beerPriceLabel.leadingAnchor.constraint(greaterThanOrEqualTo: stackView.trailingAnchor, constant: -10),
             beerPriceLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            beerPriceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10)
+            beerPriceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15)
         ])
     }
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

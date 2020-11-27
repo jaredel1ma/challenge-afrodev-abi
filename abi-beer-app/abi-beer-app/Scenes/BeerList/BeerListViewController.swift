@@ -70,7 +70,6 @@ class BeerListViewController: UIViewController {
     }
 }
 
-
 extension BeerListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let beer = beers[indexPath.row]

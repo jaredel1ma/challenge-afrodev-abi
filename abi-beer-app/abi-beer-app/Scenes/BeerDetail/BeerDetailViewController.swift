@@ -9,11 +9,11 @@ import UIKit
 import SDWebImage
 
 class BeerDetailViewController: UIViewController {
-    
+
     lazy var beerNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 25)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textAlignment = .center
         label.text = "Beer Name"
         
@@ -29,12 +29,24 @@ class BeerDetailViewController: UIViewController {
         return imageView
     }()
     
+    lazy var beerDetailLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textAlignment = .center
+        label.text = "Beer Detail"
+        
+        return label
+    }()
+    
     private let imageURL: URL
     private let productName: String
+    private let productDetail: String
     
-    init(imageURL: URL, productName: String) {
+    init(imageURL: URL, productName: String, productDetail: String) {
         self.imageURL = imageURL
         self.productName = productName
+        self.productDetail = productDetail
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -52,20 +64,25 @@ class BeerDetailViewController: UIViewController {
     private func setupView() {
         view.addSubview(beerNameLabel)
         view.addSubview(beerImageView)
+        view.addSubview(beerDetailLabel)
         beerNameLabel.text = self.productName
         beerImageView.sd_setImage(with: self.imageURL, completed: nil)
+        beerDetailLabel.text = self.productDetail
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            beerNameLabel.heightAnchor.constraint(equalToConstant: 80),
-            beerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            beerNameLabel.heightAnchor.constraint(equalToConstant: 30),
+            beerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             beerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             beerNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            beerImageView.topAnchor.constraint(equalTo: beerNameLabel.bottomAnchor, constant: 30),
-            beerImageView.widthAnchor.constraint(equalToConstant: 200),
+            beerImageView.topAnchor.constraint(equalTo: beerNameLabel.bottomAnchor, constant: 10),
+            beerImageView.heightAnchor.constraint(equalToConstant: 300),
             beerImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            beerImageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
+            beerImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 30),
+            beerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
+            beerDetailLabel.topAnchor.constraint(equalTo: beerImageView.bottomAnchor, constant: 10),
+            beerDetailLabel.centerXAnchor.constraint(equalTo: beerImageView.centerXAnchor)
         ])
     }
 }
