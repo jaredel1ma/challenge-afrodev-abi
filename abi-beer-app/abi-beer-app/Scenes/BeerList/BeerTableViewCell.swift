@@ -39,7 +39,6 @@ class BeerTableViewCell: UITableViewCell {
         return stackView
     }()
     
-    
     lazy var beerNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Beer Name"
@@ -91,14 +90,14 @@ class BeerTableViewCell: UITableViewCell {
             beerImageView.widthAnchor.constraint(equalToConstant: 80),
             beerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             beerImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
-            beerImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            beerImageView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 10),
             stackViewLabels.centerYAnchor.constraint(equalTo: beerImageView.centerYAnchor),
             stackView.centerYAnchor.constraint(equalTo: beerImageView.centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: beerImageView.trailingAnchor, constant: 10),
             beerPriceLabel.heightAnchor.constraint(equalToConstant: 40),
             beerPriceLabel.leadingAnchor.constraint(greaterThanOrEqualTo: stackView.trailingAnchor, constant: -10),
             beerPriceLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            beerPriceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15)
+            beerPriceLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -15)
         ])
     }
     
