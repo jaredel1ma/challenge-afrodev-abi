@@ -27,7 +27,7 @@ class LoadingView: UIView {
     }
     
     private func setupView() {
-        backgroundColor = .green
+        backgroundColor = .lightGray
         addSubview(activityIndicator)
     }
     

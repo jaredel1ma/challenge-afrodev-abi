@@ -13,7 +13,7 @@ class BeerDetailViewController: UIViewController {
     lazy var beerNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textAlignment = .center
         label.text = "Beer Name"
         
@@ -32,7 +32,7 @@ class BeerDetailViewController: UIViewController {
     lazy var beerDetailLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 25)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.textAlignment = .center
         label.text = "Beer Detail"
         
@@ -76,10 +76,10 @@ class BeerDetailViewController: UIViewController {
             beerNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             beerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             beerNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            beerImageView.topAnchor.constraint(equalTo: beerNameLabel.bottomAnchor, constant: 10),
-            beerImageView.heightAnchor.constraint(equalToConstant: 300),
+            beerImageView.topAnchor.constraint(equalTo: beerNameLabel.bottomAnchor, constant: 30),
+            beerImageView.widthAnchor.constraint(equalToConstant: 200),
+            beerImageView.heightAnchor.constraint(equalToConstant: 150),
             beerImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            beerImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 30),
             beerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
             beerDetailLabel.topAnchor.constraint(equalTo: beerImageView.bottomAnchor, constant: 10),
             beerDetailLabel.centerXAnchor.constraint(equalTo: beerImageView.centerXAnchor)

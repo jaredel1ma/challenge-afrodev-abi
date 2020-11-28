@@ -19,12 +19,14 @@ class BeerListPresenter: BeerListPresenterProtocol {
     func present(beers: [Beer]) {
         DispatchQueue.main.async {
             self.viewController?.showList(beers: beers)
+            self.viewController?.hideLoading()
         }
     }
     
     func present(errorMessage: String) {
         DispatchQueue.main.async {
             self.viewController?.showError(message: errorMessage)
+            self.viewController?.hideLoading()
         }
     }
     

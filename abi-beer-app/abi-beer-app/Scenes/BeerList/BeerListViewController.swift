@@ -56,12 +56,17 @@ class BeerListViewController: UIViewController {
     private func setupView() {
         title = "Challenge AfroDev"
         view.addSubview(tableView)
+        view.addSubview(loadingView)
         tableView.register(BeerTableViewCell.self, forCellReuseIdentifier: cellId)
         
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
+            loadingView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            loadingView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            loadingView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            loadingView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),

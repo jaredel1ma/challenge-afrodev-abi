@@ -21,5 +21,4 @@ struct Beer: Decodable {
         case discount = "desconto"
         case imageURLString = "imagem"
     }
-    
 }
