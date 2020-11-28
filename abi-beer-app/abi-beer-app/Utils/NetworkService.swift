@@ -16,7 +16,6 @@ protocol NetworkServiceProtocol {
     func requestData(url: URL, completion: @escaping (Result<Data, BeerError>) -> Void)
 }
 
-
 class NetworkService: NetworkServiceProtocol {
     init() { }
     

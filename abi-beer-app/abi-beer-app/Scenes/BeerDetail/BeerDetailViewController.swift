@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 
 class BeerDetailViewController: UIViewController {
-
+    
     lazy var beerNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
